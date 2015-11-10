@@ -1,6 +1,6 @@
 function load () {
     chrome.tabs.executeScript({
-    	code:'document.getElementById("notification-banner").style.display = "none"'
+    	code:'document.getElementById("notification-banner").style.display = "none"';
 	});	
 };
 
