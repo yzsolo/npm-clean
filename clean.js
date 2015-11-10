@@ -1,13 +1,13 @@
+function load () {
+    chrome.tabs.executeScript({
+    	code:'document.getElementById("notification-banner").style.display = "none"'
+	});	
+};
+
 chrome.tabs.onActivated.addListener(function() {
-  load();
+    load();
 });
 
 chrome.tabs.onUpdated.addListener(function() {
-  load();
+    load();
 })
-
-var load = function() {
-    chrome.tabs.executeScript({
-    	code:'document.getElementById("notification-banner").style.display = "none"'
-	});
-}
