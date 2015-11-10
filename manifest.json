@@ -1,0 +1,23 @@
+{
+    "name": "rm npm-banner",
+    "description": "remove the large banner from npmjs site",
+    "version": "1.0",
+
+    "permissions": [
+        "activeTab",
+        "https://www.npmjs.com/*"
+    ],
+
+    "background": {
+        "scripts": [
+            "clean.js"
+        ],
+        "persistent": true
+    },
+
+    "browser_action": {
+        "default_title": "Make page clean"
+    },
+
+    "manifest_version": 2
+}
